@@ -1,0 +1,64 @@
+{
+  "node1": {
+    "ip": "18.228.58.25",
+    "node": "410b68d95a01c8e32aa0461db55589ab710273f3",
+    "peears": "87a0b013b15d9f6c5bf3078c93b9263677b409a5@54.233.173.220:26656,2555dc24f909aa05d0e47a9eb25aa55ca73568b6@15.228.21.132:26656"
+  },
+  "node2": {
+    "ip": "54.233.173.220",
+    "node": "87a0b013b15d9f6c5bf3078c93b9263677b409a5",
+    "peears": "410b68d95a01c8e32aa0461db55589ab710273f3@18.228.58.25:26656,2555dc24f909aa05d0e47a9eb25aa55ca73568b6@15.228.21.132:26656"
+  },
+  "node3": {
+    "ip": "15.228.21.132",
+    "node": "2555dc24f909aa05d0e47a9eb25aa55ca73568b6",
+    "peears": "410b68d95a01c8e32aa0461db55589ab710273f3@18.228.58.25:26656,87a0b013b15d9f6c5bf3078c93b9263677b409a5@54.233.173.220:26656"
+  },
+  "genesis": {
+    "genesis_time": "2021-04-08T06:22:39.95025952Z",
+    "chain_id": "test-chain-rQBlZ5",
+    "consensus_params": {
+      "block": {
+        "max_bytes": "22020096",
+        "max_gas": "-1",
+        "time_iota_ms": "1000"
+      },
+      "evidence": {
+        "max_age": "100000"
+      },
+      "validator": {
+        "pub_key_types": ["ed25519"]
+      }
+    },
+    "validators": [
+      {
+        "address": "35AFD72428C9A4AEBF70CF4C4F850542D1C626FD",
+        "pub_key": {
+          "type": "tendermint/PubKeyEd25519",
+          "value": "1kHdice0QzWBmsSaaQ6+nmBuNw06S9bkgmrbKoIcBfY="
+        },
+        "power": "10",
+        "name": ""
+      },
+      {
+        "address": "B31A72695BD863B8ED9D7A079FA95173A4CDEEF8",
+        "pub_key": {
+          "type": "tendermint/PubKeyEd25519",
+          "value": "VjG/QPgMMccr/rNkEe8tUGu3njcjmQ3GNn8iOavSpnk="
+        },
+        "power": "10",
+        "name": ""
+      },
+      {
+        "address": "2226025722139F24D569B0FAF5ED868421575029",
+        "pub_key": {
+          "type": "tendermint/PubKeyEd25519",
+          "value": "fk4yuZhKTSjaaJXoTq9yFA8unjH4jxGImXKa8FMmB6s="
+        },
+        "power": "10",
+        "name": ""
+      }
+    ],
+    "app_hash": ""
+  }
+}

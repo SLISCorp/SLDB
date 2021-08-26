@@ -1,0 +1,28 @@
+version: "3.7"
+services:
+  mongo:
+    build: mongo
+    restart: always
+    network_mode: host
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: sldbRoot
+      MONGO_INITDB_ROOT_PASSWORD: sldb1234567
+      MONGO_INITDB_DATABASE: modex
+    ports:
+      - 27017:27017
+    volumes:
+      - ./mongo/mongo.conf:/etc/mongod.conf
+      - ./mongo/init.js:/docker-entrypoint-initdb.d/mongo-init.js:ro
+  frontend:
+    build: frontend
+    network_mode: host
+    ports:
+      - 3001:3001
+  backend:
+    build: backend
+    network_mode: host
+    restart: always
+    ports:
+      - 3000:3000
+    depends_on: 
+      - mongo

@@ -1,0 +1,38 @@
+.c-sidebar {
+  background-color: rgb(33, 58, 143);
+}
+.c-sidebar .c-sidebar-brand {
+  background-color: rgb(139, 151, 112);
+  height: 90px;
+}
+.c-sidebar .c-sidebar-brand img {
+  height: 90%;
+}
+.minimize-logo {
+  height: 40% !important;
+}
+.left-margin-zero {
+  margin-left: 0 !important;
+}
+.login-height{ 
+   min-height: 75vh !important;
+  }
+/* .row .form-group .my-0 .mb-2 {
+  display: flex;
+  flex-direction: column;
+} */
+
+.general-info > span {
+  font-size: 12px;
+}
+.width-500 {
+  width: 500px !important;
+}
+.width-500 .card-body {
+  max-height: 400px;
+  overflow: auto;
+}
+
+.react-datepicker-wrapper{
+ width: 100%; 
+}
